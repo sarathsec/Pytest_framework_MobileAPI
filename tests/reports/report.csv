@@ -1,0 +1,5 @@
+id,module,name,file,doc,markers,status,message,duration
+test_param.py::test_par[tests_to_execute0],test_param,test_par[tests_to_execute0],test_param.py,,,passed,,5.527635900070891
+test_param.py::test_par[tests_to_execute1],test_param,test_par[tests_to_execute1],test_param.py,,,passed,,0.12857810000423342
+test_param.py::test_par[tests_to_execute2],test_param,test_par[tests_to_execute2],test_param.py,,,failed,"AssertionError: Expected status code: 400, Actual status code: 404
+assert 404 == 400",0.06468200008384883

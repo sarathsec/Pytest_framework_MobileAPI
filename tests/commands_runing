@@ -1,0 +1,2 @@
+python combo.py regression,bvt,sanity GetAllTMU,GetAllDCU,GetAllMeter,GetAllRegion,GetAllSection
+python All_services.py

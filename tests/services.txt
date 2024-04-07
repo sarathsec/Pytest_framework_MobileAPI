@@ -1,0 +1,17 @@
+    "GetAllAutoRecloser","GetAllCircle","GetAllDCU","GetAllDTR","GetAllDtrTmusByFeederId"
+    ,"GetAllFeeder",
+    "GetAllFeedersBySubstationId",
+    "GetAllFieldSurvey",
+    "GetAllManufacturer",
+    "GetAllMeter",
+    "GetAllMetersByDcuId",
+    "GetAllPole",
+    "GetAllRegion",
+    "GetAllSection",
+    "GetAllService",
+    "GetAllSim",
+    "GetAllSubstation",
+    "GetAllSubstationsBySectionId",
+    "GetAllTMU",
+    "GetAllTransformer",
+    "GetFieldSurveyByAssetTypes"

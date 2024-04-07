@@ -1,0 +1,478 @@
+2024-02-08 12:29:29 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'valid_URL_valid_Port', 'testcase_id': '001', 'endpoint': '/Eficaa/AllAssetTypes/GetAllSection', 'operation': 'GET', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '8083'}, 'expected_output': {'status_code': '200', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:29 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:29 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 001                                         |
++------------------+---------------------------------------------+
+| testcase_name    | valid_URL_valid_Port                        |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa/AllAssetTypes/GetAllSection         |
++------------------+---------------------------------------------+
+| operation        | GET                                         |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '8083'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '200', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:29 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:29 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:29 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "GET /Eficaa/AllAssetTypes/GetAllSection?port=8083 HTTP/1.1" 200 None (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+-------------------------------------------------------------+
+| Parameter                    | Value                                                       |
++==============================+=============================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                             |
++------------------------------+-------------------------------------------------------------+
+| service_name                 | GetAllSection                                               |
++------------------------------+-------------------------------------------------------------+
+| testcase_name                | valid_URL_valid_Port                                        |
++------------------------------+-------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection |
++------------------------------+-------------------------------------------------------------+
+| testcase_id                  | 001                                                         |
++------------------------------+-------------------------------------------------------------+
+| endpoint                     | /Eficaa/AllAssetTypes/GetAllSection                         |
++------------------------------+-------------------------------------------------------------+
+| operation                    | GET                                                         |
++------------------------------+-------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                        |
++------------------------------+-------------------------------------------------------------+
+| query_parameters             | {'port': '8083'}                                            |
++------------------------------+-------------------------------------------------------------+
+| expected_output              | {'status_code': '200', 'expected_body': ''}                 |
++------------------------------+-------------------------------------------------------------+
+| actual_status_code           | 200                                                         |
++------------------------------+-------------------------------------------------------------+
+| REMARKS                      | PASS                                                        |
++------------------------------+-------------------------------------------------------------+
+| execution_time               | 0.213937                                                    |
++------------------------------+-------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-29                                         |
++------------------------------+-------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:30 [    INFO] b'[{"sectionId":1,"sectionName":"SECTION1","location":null,"divisionId":2,"latitude":"17.100","longitude":"73.200","inchargeName":"ram","inchargeMobileNumber":"919848214756","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":2,"sectionName":"SECTION2","location":"HYDERABAD","divisionId":2,"latitude":"17.2345","longitude":"78.2345","inchargeName":"SAM","inchargeMobileNumber":"91985423670","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":3,"sectionName":"SECTION3","location":"BEGUMPET","divisionId":1004,"latitude":"17.4567","longitude":"78.2345","inchargeName":"Chandra","inchargeMobileNumber":"9187456321","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":4,"sectionName":"praneetha","location":"Hyderabad","divisionId":1003,"latitude":"17.45.3456","longitude":"78.2345","inchargeName":"RHYM","inchargeMobileNumber":"919491584201","inchargeUserid":null,"userIp":null,"isActive":false},{"sectionId":5,"sectionName":"Ashwini","location":"up","divisionId":2,"latitude":"2","longitude":"8","inchargeName":"dffgr","inchargeMobileNumber":"918985622339","inchargeUserid":null,"userIp":null,"isActive":false},{"sectionId":6,"sectionName":"SECTION4","location":"Hyderabad","divisionId":1007,"latitude":"17.32","longitude":"78.28","inchargeName":"Ram","inchargeMobileNumber":"9847563217","inchargeUserid":3,"userIp":null,"isActive":true}]' (test_param.py:163)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'valid_URL_invalid_Port', 'testcase_id': '002', 'endpoint': '/Eficaa/AllAssetTypes/GetAllSection', 'operation': 'GET', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '7056'}, 'expected_output': {'status_code': '200', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 002                                         |
++------------------+---------------------------------------------+
+| testcase_name    | valid_URL_invalid_Port                      |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa/AllAssetTypes/GetAllSection         |
++------------------+---------------------------------------------+
+| operation        | GET                                         |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '7056'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '200', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "GET /Eficaa/AllAssetTypes/GetAllSection?port=7056 HTTP/1.1" 200 None (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+-------------------------------------------------------------+
+| Parameter                    | Value                                                       |
++==============================+=============================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                             |
++------------------------------+-------------------------------------------------------------+
+| service_name                 | GetAllSection                                               |
++------------------------------+-------------------------------------------------------------+
+| testcase_name                | valid_URL_invalid_Port                                      |
++------------------------------+-------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection |
++------------------------------+-------------------------------------------------------------+
+| testcase_id                  | 002                                                         |
++------------------------------+-------------------------------------------------------------+
+| endpoint                     | /Eficaa/AllAssetTypes/GetAllSection                         |
++------------------------------+-------------------------------------------------------------+
+| operation                    | GET                                                         |
++------------------------------+-------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                        |
++------------------------------+-------------------------------------------------------------+
+| query_parameters             | {'port': '7056'}                                            |
++------------------------------+-------------------------------------------------------------+
+| expected_output              | {'status_code': '200', 'expected_body': ''}                 |
++------------------------------+-------------------------------------------------------------+
+| actual_status_code           | 200                                                         |
++------------------------------+-------------------------------------------------------------+
+| REMARKS                      | PASS                                                        |
++------------------------------+-------------------------------------------------------------+
+| execution_time               | 0.258351                                                    |
++------------------------------+-------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                         |
++------------------------------+-------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:30 [    INFO] b'[{"sectionId":1,"sectionName":"SECTION1","location":null,"divisionId":2,"latitude":"17.100","longitude":"73.200","inchargeName":"ram","inchargeMobileNumber":"919848214756","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":2,"sectionName":"SECTION2","location":"HYDERABAD","divisionId":2,"latitude":"17.2345","longitude":"78.2345","inchargeName":"SAM","inchargeMobileNumber":"91985423670","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":3,"sectionName":"SECTION3","location":"BEGUMPET","divisionId":1004,"latitude":"17.4567","longitude":"78.2345","inchargeName":"Chandra","inchargeMobileNumber":"9187456321","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":4,"sectionName":"praneetha","location":"Hyderabad","divisionId":1003,"latitude":"17.45.3456","longitude":"78.2345","inchargeName":"RHYM","inchargeMobileNumber":"919491584201","inchargeUserid":null,"userIp":null,"isActive":false},{"sectionId":5,"sectionName":"Ashwini","location":"up","divisionId":2,"latitude":"2","longitude":"8","inchargeName":"dffgr","inchargeMobileNumber":"918985622339","inchargeUserid":null,"userIp":null,"isActive":false},{"sectionId":6,"sectionName":"SECTION4","location":"Hyderabad","divisionId":1007,"latitude":"17.32","longitude":"78.28","inchargeName":"Ram","inchargeMobileNumber":"9847563217","inchargeUserid":3,"userIp":null,"isActive":true}]' (test_param.py:163)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'invalid_URL_invalid_Port', 'testcase_id': '003', 'endpoint': '/Eficaa_YT/AllAssetTypes/GetAllSection', 'operation': 'GET', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '7056'}, 'expected_output': {'status_code': '400', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 003                                         |
++------------------+---------------------------------------------+
+| testcase_name    | invalid_URL_invalid_Port                    |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa_YT/AllAssetTypes/GetAllSection      |
++------------------+---------------------------------------------+
+| operation        | GET                                         |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '7056'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '400', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa_YT/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "GET /Eficaa_YT/AllAssetTypes/GetAllSection?port=7056 HTTP/1.1" 404 None (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+----------------------------------------------------------------+
+| Parameter                    | Value                                                          |
++==============================+================================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                                |
++------------------------------+----------------------------------------------------------------+
+| service_name                 | GetAllSection                                                  |
++------------------------------+----------------------------------------------------------------+
+| testcase_name                | invalid_URL_invalid_Port                                       |
++------------------------------+----------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa_YT/AllAssetTypes/GetAllSection |
++------------------------------+----------------------------------------------------------------+
+| testcase_id                  | 003                                                            |
++------------------------------+----------------------------------------------------------------+
+| endpoint                     | /Eficaa_YT/AllAssetTypes/GetAllSection                         |
++------------------------------+----------------------------------------------------------------+
+| operation                    | GET                                                            |
++------------------------------+----------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                           |
++------------------------------+----------------------------------------------------------------+
+| query_parameters             | {'port': '7056'}                                               |
++------------------------------+----------------------------------------------------------------+
+| expected_output              | {'status_code': '400', 'expected_body': ''}                    |
++------------------------------+----------------------------------------------------------------+
+| actual_status_code           | 404                                                            |
++------------------------------+----------------------------------------------------------------+
+| REMARKS                      | FAIL                                                           |
++------------------------------+----------------------------------------------------------------+
+| execution_time               | 0.08225                                                        |
++------------------------------+----------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                            |
++------------------------------+----------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'valid_URL_invalid_method_POST', 'testcase_id': '004', 'endpoint': '/Eficaa/AllAssetTypes/GetAllSection', 'operation': 'Post', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '8083'}, 'expected_output': {'status_code': '405', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 004                                         |
++------------------+---------------------------------------------+
+| testcase_name    | valid_URL_invalid_method_POST               |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa/AllAssetTypes/GetAllSection         |
++------------------+---------------------------------------------+
+| operation        | Post                                        |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '8083'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '405', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "POST /Eficaa/AllAssetTypes/GetAllSection?port=8083 HTTP/1.1" 405 None (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+-------------------------------------------------------------+
+| Parameter                    | Value                                                       |
++==============================+=============================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                             |
++------------------------------+-------------------------------------------------------------+
+| service_name                 | GetAllSection                                               |
++------------------------------+-------------------------------------------------------------+
+| testcase_name                | valid_URL_invalid_method_POST                               |
++------------------------------+-------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection |
++------------------------------+-------------------------------------------------------------+
+| testcase_id                  | 004                                                         |
++------------------------------+-------------------------------------------------------------+
+| endpoint                     | /Eficaa/AllAssetTypes/GetAllSection                         |
++------------------------------+-------------------------------------------------------------+
+| operation                    | Post                                                        |
++------------------------------+-------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                        |
++------------------------------+-------------------------------------------------------------+
+| query_parameters             | {'port': '8083'}                                            |
++------------------------------+-------------------------------------------------------------+
+| expected_output              | {'status_code': '405', 'expected_body': ''}                 |
++------------------------------+-------------------------------------------------------------+
+| actual_status_code           | 405                                                         |
++------------------------------+-------------------------------------------------------------+
+| REMARKS                      | PASS                                                        |
++------------------------------+-------------------------------------------------------------+
+| execution_time               | 0.075211                                                    |
++------------------------------+-------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                         |
++------------------------------+-------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:30 [    INFO] b'' (test_param.py:163)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'invalid_URL_valid_method_GET', 'testcase_id': '005', 'endpoint': '/EficaaIII/AllAssetTypes/GetAllSection', 'operation': 'GET', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '8083'}, 'expected_output': {'status_code': '404', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 005                                         |
++------------------+---------------------------------------------+
+| testcase_name    | invalid_URL_valid_method_GET                |
++------------------+---------------------------------------------+
+| endpoint         | /EficaaIII/AllAssetTypes/GetAllSection      |
++------------------+---------------------------------------------+
+| operation        | GET                                         |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '8083'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '404', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/EficaaIII/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "GET /EficaaIII/AllAssetTypes/GetAllSection?port=8083 HTTP/1.1" 404 None (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+----------------------------------------------------------------+
+| Parameter                    | Value                                                          |
++==============================+================================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                                |
++------------------------------+----------------------------------------------------------------+
+| service_name                 | GetAllSection                                                  |
++------------------------------+----------------------------------------------------------------+
+| testcase_name                | invalid_URL_valid_method_GET                                   |
++------------------------------+----------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/EficaaIII/AllAssetTypes/GetAllSection |
++------------------------------+----------------------------------------------------------------+
+| testcase_id                  | 005                                                            |
++------------------------------+----------------------------------------------------------------+
+| endpoint                     | /EficaaIII/AllAssetTypes/GetAllSection                         |
++------------------------------+----------------------------------------------------------------+
+| operation                    | GET                                                            |
++------------------------------+----------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                           |
++------------------------------+----------------------------------------------------------------+
+| query_parameters             | {'port': '8083'}                                               |
++------------------------------+----------------------------------------------------------------+
+| expected_output              | {'status_code': '404', 'expected_body': ''}                    |
++------------------------------+----------------------------------------------------------------+
+| actual_status_code           | 404                                                            |
++------------------------------+----------------------------------------------------------------+
+| REMARKS                      | PASS                                                           |
++------------------------------+----------------------------------------------------------------+
+| execution_time               | 0.100324                                                       |
++------------------------------+----------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                            |
++------------------------------+----------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:30 [    INFO] b'' (test_param.py:163)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'valid_URL_invalid_method_DELETE', 'testcase_id': '006', 'endpoint': '/Eficaa/AllAssetTypes/GetAllSection', 'operation': 'DELETE', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '8083'}, 'expected_output': {'status_code': '405', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 006                                         |
++------------------+---------------------------------------------+
+| testcase_name    | valid_URL_invalid_method_DELETE             |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa/AllAssetTypes/GetAllSection         |
++------------------+---------------------------------------------+
+| operation        | DELETE                                      |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '8083'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '405', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "DELETE /Eficaa/AllAssetTypes/GetAllSection?port=8083 HTTP/1.1" 405 1293 (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+-------------------------------------------------------------+
+| Parameter                    | Value                                                       |
++==============================+=============================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                             |
++------------------------------+-------------------------------------------------------------+
+| service_name                 | GetAllSection                                               |
++------------------------------+-------------------------------------------------------------+
+| testcase_name                | valid_URL_invalid_method_DELETE                             |
++------------------------------+-------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection |
++------------------------------+-------------------------------------------------------------+
+| testcase_id                  | 006                                                         |
++------------------------------+-------------------------------------------------------------+
+| endpoint                     | /Eficaa/AllAssetTypes/GetAllSection                         |
++------------------------------+-------------------------------------------------------------+
+| operation                    | DELETE                                                      |
++------------------------------+-------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                        |
++------------------------------+-------------------------------------------------------------+
+| query_parameters             | {'port': '8083'}                                            |
++------------------------------+-------------------------------------------------------------+
+| expected_output              | {'status_code': '405', 'expected_body': ''}                 |
++------------------------------+-------------------------------------------------------------+
+| actual_status_code           | 405                                                         |
++------------------------------+-------------------------------------------------------------+
+| REMARKS                      | PASS                                                        |
++------------------------------+-------------------------------------------------------------+
+| execution_time               | 0.083555                                                    |
++------------------------------+-------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                         |
++------------------------------+-------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:30 [    INFO] b'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\r\n<html xmlns="http://www.w3.org/1999/xhtml">\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>\r\n<title>405 - HTTP verb used to access this page is not allowed.</title>\r\n<style type="text/css">\r\n<!--\r\nbody{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;}\r\nfieldset{padding:0 15px 10px 15px;} \r\nh1{font-size:2.4em;margin:0;color:#FFF;}\r\nh2{font-size:1.7em;margin:0;color:#CC0000;} \r\nh3{font-size:1.2em;margin:10px 0 0 0;color:#000000;} \r\n#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS", Verdana, sans-serif;color:#FFF;\r\nbackground-color:#555555;}\r\n#content{margin:0 0 0 2%;position:relative;}\r\n.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;}\r\n-->\r\n</style>\r\n</head>\r\n<body>\r\n<div id="header"><h1>Server Error</h1></div>\r\n<div id="content">\r\n <div class="content-container"><fieldset>\r\n  <h2>405 - HTTP verb used to access this page is not allowed.</h2>\r\n  <h3>The page you are looking for cannot be displayed because an invalid method (HTTP verb) was used to attempt access.</h3>\r\n </fieldset></div>\r\n</div>\r\n</body>\r\n</html>\r\n' (test_param.py:163)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'Invalid_URL_invalid_method_POST', 'testcase_id': '007', 'endpoint': '/Eficaa/AllAssetTypes/GetAllSection', 'operation': 'POST', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '8083'}, 'expected_output': {'status_code': '405', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 007                                         |
++------------------+---------------------------------------------+
+| testcase_name    | Invalid_URL_invalid_method_POST             |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa/AllAssetTypes/GetAllSection         |
++------------------+---------------------------------------------+
+| operation        | POST                                        |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '8083'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '405', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:30 [   DEBUG] http://172.16.15.24:8083 "POST /Eficaa/AllAssetTypes/GetAllSection?port=8083 HTTP/1.1" 405 None (connectionpool.py:546)
+2024-02-08 12:29:30 [    INFO] 
++------------------------------+-------------------------------------------------------------+
+| Parameter                    | Value                                                       |
++==============================+=============================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                             |
++------------------------------+-------------------------------------------------------------+
+| service_name                 | GetAllSection                                               |
++------------------------------+-------------------------------------------------------------+
+| testcase_name                | Invalid_URL_invalid_method_POST                             |
++------------------------------+-------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection |
++------------------------------+-------------------------------------------------------------+
+| testcase_id                  | 007                                                         |
++------------------------------+-------------------------------------------------------------+
+| endpoint                     | /Eficaa/AllAssetTypes/GetAllSection                         |
++------------------------------+-------------------------------------------------------------+
+| operation                    | POST                                                        |
++------------------------------+-------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                        |
++------------------------------+-------------------------------------------------------------+
+| query_parameters             | {'port': '8083'}                                            |
++------------------------------+-------------------------------------------------------------+
+| expected_output              | {'status_code': '405', 'expected_body': ''}                 |
++------------------------------+-------------------------------------------------------------+
+| actual_status_code           | 405                                                         |
++------------------------------+-------------------------------------------------------------+
+| REMARKS                      | PASS                                                        |
++------------------------------+-------------------------------------------------------------+
+| execution_time               | 0.125683                                                    |
++------------------------------+-------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                         |
++------------------------------+-------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:30 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:30 [    INFO] b'' (test_param.py:163)
+2024-02-08 12:29:30 [    INFO] {'service_name': 'GetAllSection', 'testcase_name': 'valid_URL_valid_method_GET', 'testcase_id': '008', 'endpoint': '/Eficaa/AllAssetTypes/GetAllSection', 'operation': 'GET', 'headers': {'Content-Type': 'application/json'}, 'query_parameters': {'port': '8083'}, 'expected_output': {'status_code': '200', 'expected_body': ''}} (test_param.py:105)
+2024-02-08 12:29:30 [    INFO] Test_parameters (test_param.py:106)
+2024-02-08 12:29:30 [    INFO] 
++------------------+---------------------------------------------+
+| Parameter        | Value                                       |
++==================+=============================================+
+| MY INPUT DATA    |                                             |
++------------------+---------------------------------------------+
+| testcase_id      | 008                                         |
++------------------+---------------------------------------------+
+| testcase_name    | valid_URL_valid_method_GET                  |
++------------------+---------------------------------------------+
+| endpoint         | /Eficaa/AllAssetTypes/GetAllSection         |
++------------------+---------------------------------------------+
+| operation        | GET                                         |
++------------------+---------------------------------------------+
+| headers          | {'Content-Type': 'application/json'}        |
++------------------+---------------------------------------------+
+| query_parameters | {'port': '8083'}                            |
++------------------+---------------------------------------------+
+| expected_output  | {'status_code': '200', 'expected_body': ''} |
++------------------+---------------------------------------------+ (test_param.py:122)
+2024-02-08 12:29:30 [    INFO] Endpoint is http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection (test_param.py:125)
+2024-02-08 12:29:30 [    INFO] Creating an instance of CloudInterfaceModule class (cloud_interface_module.py:26)
+2024-02-08 12:29:30 [   DEBUG] Starting new HTTP connection (1): 172.16.15.24:8083 (connectionpool.py:244)
+2024-02-08 12:29:31 [   DEBUG] http://172.16.15.24:8083 "GET /Eficaa/AllAssetTypes/GetAllSection?port=8083 HTTP/1.1" 200 None (connectionpool.py:546)
+2024-02-08 12:29:31 [    INFO] 
++------------------------------+-------------------------------------------------------------+
+| Parameter                    | Value                                                       |
++==============================+=============================================================+
+| MAIN RESULTS AFTER ASSERTION |                                                             |
++------------------------------+-------------------------------------------------------------+
+| service_name                 | GetAllSection                                               |
++------------------------------+-------------------------------------------------------------+
+| testcase_name                | valid_URL_valid_method_GET                                  |
++------------------------------+-------------------------------------------------------------+
+| Hyperlink                    | http://172.16.15.24:8083/Eficaa/AllAssetTypes/GetAllSection |
++------------------------------+-------------------------------------------------------------+
+| testcase_id                  | 008                                                         |
++------------------------------+-------------------------------------------------------------+
+| endpoint                     | /Eficaa/AllAssetTypes/GetAllSection                         |
++------------------------------+-------------------------------------------------------------+
+| operation                    | GET                                                         |
++------------------------------+-------------------------------------------------------------+
+| headers                      | {'Content-Type': 'application/json'}                        |
++------------------------------+-------------------------------------------------------------+
+| query_parameters             | {'port': '8083'}                                            |
++------------------------------+-------------------------------------------------------------+
+| expected_output              | {'status_code': '200', 'expected_body': ''}                 |
++------------------------------+-------------------------------------------------------------+
+| actual_status_code           | 200                                                         |
++------------------------------+-------------------------------------------------------------+
+| REMARKS                      | PASS                                                        |
++------------------------------+-------------------------------------------------------------+
+| execution_time               | 0.208525                                                    |
++------------------------------+-------------------------------------------------------------+
+| timestamp                    | 2024-02-08_12-29-30                                         |
++------------------------------+-------------------------------------------------------------+ (test_param.py:156)
+2024-02-08 12:29:31 [    INFO] Response_content (test_param.py:162)
+2024-02-08 12:29:31 [    INFO] b'[{"sectionId":1,"sectionName":"SECTION1","location":null,"divisionId":2,"latitude":"17.100","longitude":"73.200","inchargeName":"ram","inchargeMobileNumber":"919848214756","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":2,"sectionName":"SECTION2","location":"HYDERABAD","divisionId":2,"latitude":"17.2345","longitude":"78.2345","inchargeName":"SAM","inchargeMobileNumber":"91985423670","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":3,"sectionName":"SECTION3","location":"BEGUMPET","divisionId":1004,"latitude":"17.4567","longitude":"78.2345","inchargeName":"Chandra","inchargeMobileNumber":"9187456321","inchargeUserid":3,"userIp":null,"isActive":true},{"sectionId":4,"sectionName":"praneetha","location":"Hyderabad","divisionId":1003,"latitude":"17.45.3456","longitude":"78.2345","inchargeName":"RHYM","inchargeMobileNumber":"919491584201","inchargeUserid":null,"userIp":null,"isActive":false},{"sectionId":5,"sectionName":"Ashwini","location":"up","divisionId":2,"latitude":"2","longitude":"8","inchargeName":"dffgr","inchargeMobileNumber":"918985622339","inchargeUserid":null,"userIp":null,"isActive":false},{"sectionId":6,"sectionName":"SECTION4","location":"Hyderabad","divisionId":1007,"latitude":"17.32","longitude":"78.28","inchargeName":"Ram","inchargeMobileNumber":"9847563217","inchargeUserid":3,"userIp":null,"isActive":true}]' (test_param.py:163)

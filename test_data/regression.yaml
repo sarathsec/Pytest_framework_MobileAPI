@@ -1,0 +1,201 @@
+tests:
+  GetAllAutoRecloser:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllCircle:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllDCU:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllDTR:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllDtr&TMUsByFeederId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllFeeder:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllFeedersBySubstationId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllFieldSurvey:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllManufacture:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllMeter:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllMetersByDcuId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllPole:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllRegion:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllSection:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllService:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllSim:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllSubstation:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllSubstationsBySectionId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllTMU:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllTransformer:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetFieldSurveyByAssetTypes:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+  GetAllDtrTmusByFeederId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    - valid_URL_invalid_method_POST
+    - invalid_URL_valid_method_GET
+    - valid_URL_invalid_method_DELETE
+    - Invalid_URL_invalid_method_POST
+    - valid_URL_valid_method_GET
+
+

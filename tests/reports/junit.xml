@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="6.066" timestamp="2024-02-26T11:59:33.966574" hostname="EESPL091"><testcase classname="test_param" name="test_par[tests_to_execute0]" time="5.529" /><testcase classname="test_param" name="test_par[tests_to_execute1]" time="0.129" /><testcase classname="test_param" name="test_par[tests_to_execute2]" time="0.065"><failure message="AssertionError: Expected status code: 400, Actual status code: 404&#10;assert 404 == 400">tests_to_execute = {'endpoint': '/Eficaa_YT/AllAssetTypes/GetAllTMU', 'expected_output': {'expected_body': '', 'status_code': '400'}, 'headers': {'Content-Type': 'application/json'}, 'operation': 'GET', ...}
+
+    def test_par(tests_to_execute):
+        logger.info(tests_to_execute)
+        logger.info("Test_parameters")
+        print("MY INPUT DATA")
+        # Format the test parameters as a table
+        table_data = [
+            ("Parameter", "Value"),
+            ("MY INPUT DATA",""),
+            ("testcase_id", tests_to_execute.get("testcase_id", "")),
+            ("testcase_name", tests_to_execute.get("testcase_name", "")),
+            ("endpoint", tests_to_execute.get("endpoint", "")),
+            ("operation", tests_to_execute.get("operation", "")),
+            ("headers", str(tests_to_execute.get("headers", ""))),
+            ("query_parameters", str(tests_to_execute.get("query_parameters", ""))),
+            ("expected_output", str(tests_to_execute.get("expected_output", ""))),
+        ]
+    
+        # Log the table
+        logger.info("\n" + tabulate(table_data, headers="firstrow", tablefmt="grid"))
+    
+        endpoint = f"{base_url}{tests_to_execute['endpoint']}"
+        logger.info(f"Endpoint is {endpoint}")
+    
+        cloud_intf_module = CloudInterfaceModule()
+        [actual_status_code, content, execution_time, timestamp] = cloud_intf_module.request(
+            method=tests_to_execute["operation"],
+            url=endpoint,
+            params={'port': tests_to_execute["query_parameters"]["port"]}
+        )
+    
+        remarks = "PASS" if str(actual_status_code) == str(tests_to_execute.get("expected_output", {}).get("status_code", "")) else "FAIL"
+    
+        # Log the table before the assertion
+        table_data = [
+            ("Parameter", "Value"),
+            ("MAIN RESULTS AFTER ASSERTION",""),
+            ("service_name",tests_to_execute.get("service_name","")),
+            ("testcase_name", str(tests_to_execute.get("testcase_name", ""))),
+            ("Hyperlink",endpoint),
+            ("testcase_id", tests_to_execute.get("testcase_id", "")),
+            ("endpoint", tests_to_execute.get("endpoint", "")),
+            ("operation", tests_to_execute.get("operation", "")),
+            ("headers", str(tests_to_execute.get("headers", ""))),
+            ("query_parameters", str(tests_to_execute.get("query_parameters", ""))),
+            ("expected_output", str(tests_to_execute.get("expected_output", ""))),
+            ("actual_status_code", str(actual_status_code)),  # Include actual_status_code in the table
+            ("REMARKS", remarks),
+            ("execution_time", execution_time),
+            ("timestamp", timestamp),
+        ]
+    
+        # Log the table
+        logger.info("\n" + tabulate(table_data, headers="firstrow", tablefmt="grid"))
+    
+        # Perform assertions
+        expected_status_code = int(tests_to_execute["expected_output"]["status_code"])
+&gt;       assert actual_status_code == expected_status_code, f"Expected status code: {expected_status_code}, Actual status code: {actual_status_code}"
+E       AssertionError: Expected status code: 400, Actual status code: 404
+E       assert 404 == 400
+
+test_param.py:160: AssertionError</failure></testcase></testsuite></testsuites>

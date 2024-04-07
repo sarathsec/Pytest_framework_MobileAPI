@@ -1,0 +1,3763 @@
+# All the test cases for each service name is defined in this file.
+tests:
+  GetAllAutoRecloser:
+    valid_URL_valid_Port:
+      service_name: 'GetAllAutoRecloser'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllAutoRecloser'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllAutoRecloser'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllAutoRecloser'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllAutoRecloser'
+      testcasename: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllAutoRecloser'
+      testcasename: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllAutoRecloser'
+      testcasename: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllAutoRecloser'
+      testcasename: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllAutoRecloser'
+      testcasename: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllAutoRecloser'
+      testcasename: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllAutoRecloser"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllAutoRecloser'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllAutoRecloser"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllAutoRecloser'
+      testcase: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllAutoRecloser"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllAutoRecloser'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllAutoRecloser"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllCircle:
+    valid_URL_valid_Port:
+      service_name: 'GetAllCircle'
+      testcase_name: 'valid_URL_valid_Por'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllCircle'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllCircle'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllCircle'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllCircle'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllCircle'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllCircle'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllCircle'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllCircle'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllCircle'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllCircle'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllCircle"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllCircle'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllCircle'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllDCU:
+    valid_URL_valid_Port:
+      service_name: 'GetAllDCU'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllDCU'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllDCU'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_14/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllDCU'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDCU"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllDCU'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllDCU'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDCU"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllDCU'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/EficaAllAssetTypes/GetAllDCU"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllDCU'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllDCU'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllDCU'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDCU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllDCU'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllDCU"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllDCU'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDCU"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllDCU'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDCU"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllDTR:
+    valid_URL_valid_Port:
+      service_name: 'GetAllDTR'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllDTR'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllDTR'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllDTR'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllDTR'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllDTR'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllDTR'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllDTR'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllDTR'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllDTR'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDTR"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllDTR'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllDTR"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllDTR'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDTR"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllDTR'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDTR"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllDtrTmusByFeederId:
+    valid_URL_valid_Port:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET: 
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllDtrTmusByFeederId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllDtrTmusByFeederId"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllFeeder:
+    valid_URL_valid_Port:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFeeder"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllFeeder"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllFeeder"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllFeeder'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllFeeder"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllFeedersBySubstationId:
+    valid_URL_valid_Port:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllFeedersBySubstationId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetFeedersBySubstations/1"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllFieldSurvey:
+    valid_URL_valid_Port:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllFieldSurvey"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllFieldSurvey"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllCircle"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllFieldSurvey'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllManufacturer:
+    valid_URL_valid_Port:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllCircle"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllCircle"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllManufacturer'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllCircle"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllMeter:
+    valid_URL_valid_Port:
+      service_name: 'GetAllMeter'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllMeter'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllMeter'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllMeter'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMeter"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllMeter'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllMeter'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMeter"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllMeter'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMete"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllMeter'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllMeter'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllMeter'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllMeter"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllMeter'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllMeter"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllMeter'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllMeter"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllMeter'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllMeter"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllMeterByDcuId:
+    valid_URL_valid_Port:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_45/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/Eficaa88/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa_po/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "//Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_78/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_8/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllMeterByDcuId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_9/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllPole:
+    valid_URL_valid_Port:
+      service_name: 'GetAllPole'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllPole'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllPole'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllPole'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllPole'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllPole'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllPole'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllPole'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllPole'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllPole'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllPole"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllPole'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllPole"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllPole'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllPole"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllPole'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllPole"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllRegion:
+    valid_URL_valid_Port:
+      service_name: 'GetAllRegion'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllRegion'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllRegion'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllRegion'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllRegion'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllRegion'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllRegion'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllRegion'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllRegion'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllRegion'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllRegion"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllRegion'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllRegion"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllRegion'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllRegion"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllRegion'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllRegion"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllSection:
+    valid_URL_valid_Port:
+      service_name: 'GetAllSection'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllSection'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllSection'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllSection'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllSection'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllSection'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllSection'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllSection'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSection'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSection'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSection"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllSection'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllSection"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllSection'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSection"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllSection'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSection"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllService:
+    valid_URL_valid_Port:
+      service_name: 'GetAllService'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllService'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllService'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllService'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllService'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllService'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllService'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllService'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllService'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllService'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllService"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllService'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllService"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllService'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllService"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllService'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllService"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllSim:
+    valid_URL_valid_Port:
+      service_name: 'GetAllSim'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllSim'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllSim'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllSim'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllSim'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllSim'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllSim'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllSim'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSim'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSim'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSim"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllSim'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllSim"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllSim'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSim"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllSim'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSim"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllSubstation:
+    valid_URL_valid_Port:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllSubstation"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllSubstation"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE: 
+      service_name: 'GetAllSubstation'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSubstation"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllSubstation'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllSubstation"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllSubstationsBySectionId:
+    valid_URL_valid_Port:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/Eficaa/\\AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/45AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa////AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllSubstationsBySectionId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa\\78/AssetHierarchyDetails/GetSubstationsBySectionId/1"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllTMU:
+    valid_URL_valid_Port:
+      service_name: 'GetAllTMU'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllTMU'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllTMU'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllTMU'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllTMU'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllTMU'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllTMU'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllTMU'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllTMU'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllTMU'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTMU"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllTMU'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllTMU"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllTMU'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllTMU"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllTMU'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllTMU"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllTransformer:
+    valid_URL_valid_Port:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa_YT/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/EficaaIII/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "/Eficaa/AllAssetTypes/GetAllTransformer"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa_5/AllAssetTypes/GetAllTransformer"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllTransformer"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllTransformer'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa_3/AllAssetTypes/GetAllTransformer"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetFieldSurveyByAssetTypes:
+    valid_URL_valid_Port:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: '001'
+      endpoint: "/Eficaa/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    valid_URL_invalid_Port:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: '002'
+      endpoint: "/Eficaa/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    invalid_URL_invalid_Port:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: '003'
+      endpoint: "/Eficaa/\\FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '7056'
+      expected_output:
+        status_code: '400'
+        expected_body: ''
+    valid_URL_invalid_method_POST:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: '004'
+      endpoint: "/Eficaa/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: Post
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    invalid_URL_valid_method_GET:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: '005'
+      endpoint: "/Eficaa_456/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '404'
+        expected_body: ''
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: '006'
+      endpoint: "/Eficaa/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: '007'
+      endpoint: "/Eficaa///FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_URL_valid_method_GET:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: '008'
+      endpoint: "/Eficaa/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '200'
+        expected_body: ''
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: '009'
+      endpoint: "/Eficaa///FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: '010'
+      endpoint: "[/Eficaa/]FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: GET
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: '011'
+      endpoint: "/Eficaa\\/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: POST
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: '012'
+      endpoint: "///Eficaa/FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: DELETE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetFieldSurveyByAssetTypes'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: '013'
+      endpoint: "/Eficaa///FieldSurveyDetailsByAssetType/GetByAssetDetails/1"
+      operation: UPDATE
+      headers:
+        Content-Type: application/json
+      query_parameters:
+        port: '8083'
+      expected_output:
+        status_code: '405'
+        expected_body: ''
+
+  GetAllMetersByDcuId:
+    valid_URL_valid_Port:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'valid_URL_valid_Port'
+      testcase_id: "001"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "200"
+        expected_body: ""
+    valid_URL_invalid_Port:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'valid_URL_invalid_Port'
+      testcase_id: "002"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "7056"
+      expected_output:
+        status_code: "200"
+        expected_body: ""
+    invalid_URL_invalid_Port:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'invalid_URL_invalid_Port'
+      testcase_id: "003"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "7056"
+      expected_output:
+        status_code: "400"
+        expected_body: ""
+    valid_URL_invalid_method_POST:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'valid_URL_invalid_method_POST'
+      testcase_id: "004"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "Post"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    invalid_URL_valid_method_GET:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'invalid_URL_valid_method_GET'
+      testcase_id: "005"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "404"
+        expected_body: ""
+    valid_URL_invalid_method_DELETE:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'valid_URL_invalid_method_DELETE'
+      testcase_id: "006"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "DELETE"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    Invalid_URL_invalid_method_POST:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'Invalid_URL_invalid_method_POST'
+      testcase_id: "007"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "POST"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    valid_URL_valid_method_GET:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'valid_URL_valid_method_GET'
+      testcase_id: "008"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "200"
+        expected_body: ""
+    Invalid_EndPoint_valid_method_GET:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'Invalid_EndPoint_valid_method_GET'
+      testcase_id: "009"
+      endpoint: "/Eficaa_6/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    valid_EndPoint_valid_method_GET:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'valid_EndPoint_valid_method_GET'
+      testcase_id: "010"
+      endpoint: "/Eficaa/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "GET"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    Invalid_EndPoint_Invalid_method_POST:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_POST'
+      testcase_id: "011"
+      endpoint: "/Eficaa_7/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "POST"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    Invalid_EndPoint_Invalid_method_DELETE:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_DELETE'
+      testcase_id: "012"
+      endpoint: "/Eficaa_9/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "DELETE"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""
+    Invalid_EndPoint_Invalid_method_UPDATE:
+      service_name: 'GetAllMetersByDcuId'
+      testcase_name: 'Invalid_EndPoint_Invalid_method_UPDATE'
+      testcase_id: "013"
+      endpoint: "/Eficaa_8/AssetHierarchyDetails/GetMetersBydcuId/9"
+      operation: "UPDATE"
+      headers:
+        Content-Type: "application/json"
+      query_parameters:
+        port: "8083"
+      expected_output:
+        status_code: "405"
+        expected_body: ""

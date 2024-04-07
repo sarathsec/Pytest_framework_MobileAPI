@@ -1,0 +1,106 @@
+tests:
+  GetAllCircle:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllDCU:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllDTR:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllDtr&TmusByFeederId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllFeeder:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllFeedersBySubstationId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+  GetAllFieldSurvey:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllManufacture:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllMeter:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllMetersByDcuId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllPole:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllRegion:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllSection:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllService:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllSim:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllSubstation:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllSubstationsBySectionId:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllTMU:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllTransformer:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetAllAutoRecloser:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+  GetFieldSurveyByAssetTypes:
+    - valid_URL_valid_Port
+    - valid_URL_invalid_Port
+    - invalid_URL_invalid_Port
+    
+
