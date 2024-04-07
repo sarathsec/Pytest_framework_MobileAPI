@@ -1,10 +1,15 @@
 pipeline {
-    agent any 
+    agent any
     stages {
-        stage('Build') { 
+        stage('Build') {
             steps {
-                sh 'python All_services.py' 
-                stash(name: 'compiled-results', includes: 'sources/*.py*') 
+                sh 'python -m py_compile tests/combo.py'
+                stash(name: 'compiled-results', includes: 'tests/*.py*')
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh 'python combo.py regression,bvt,sanity GetAllTMU,GetAllDCU,GetAllMeter,GetAllRegion,GetAllSection' 
             }
         }
     }
